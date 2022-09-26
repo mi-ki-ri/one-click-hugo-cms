@@ -8,7 +8,7 @@ public_folder: "img"
 collections: # A list of collections the CMS should be able to edit
   - name: tags
     label: Tags
-    folder: "authors"
+    folder: "tags"
     create: true
     fields:
       - {name: name, label: Name}
@@ -19,10 +19,10 @@ collections: # A list of collections the CMS should be able to edit
     fields:
       - {name: title, label: Title}
       - {name: body, label: Body, widget: markdown}
-      - name: author
-        label: Author
+      - name: tags
+        label: Tags
         widget: relation
-        collection: authors
+        collection: tags
         searchFields: [name]
         valueField: name
   - name: "pages"
